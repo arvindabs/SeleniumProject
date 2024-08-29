@@ -1,8 +1,10 @@
 package TestCase;
 import org.testng.annotations.Test;
 
+import PageObject.AddToCart;
 import PageObject.LoginPage;
 import PageObject.SearchProduct;
+import PageObject.SelectProduct;
 public class TC_LoginTest001 extends BaseClass {
 	
 	@Test
@@ -20,6 +22,14 @@ public class TC_LoginTest001 extends BaseClass {
 		SearchProduct sp=new SearchProduct(driver);
 		sp.entryField("LED TV");
 		sp.ClickButton();
+		
+		SelectProduct sp1=new SelectProduct(driver);
+		sp1.clickProduct();	
+		
+		AddToCart ad=new AddToCart(driver);
+		ad.clickAddToCart();
+			
+				
 	}
 
 }

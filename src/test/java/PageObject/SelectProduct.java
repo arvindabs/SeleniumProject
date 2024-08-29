@@ -1,5 +1,9 @@
 package PageObject;
 
+
+import java.util.Iterator;
+import java.util.Set;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,12 +19,22 @@ public class SelectProduct {
 		PageFactory.initElements( rdriver,this);
 	}
 	
-	 @FindBy(xpath="//span[normalize-space()='Samsung 138 cm (55 inches) 4K Ultra HD AI Smart Neo-QLED TV QA55QN85DBULXL (Graphite Black)']")
+	 @FindBy(xpath="//img[@class='_bGlmZ_lifestyleImage_3B0SG']")
+	// @FindBy(xpath="//span[normalize-space()='Samsung 138 cm (55 inches) 4K Ultra HD AI Smart Neo-QLED TV QA55QN85DBULXL (Graphite Black)']")
 	 WebElement textclick;
 	 
 	 public void clickProduct()
 		{
 		 textclick.click();
+		 
+		 
+		
 		}
+
+	
+	
 	 
 }
+
+	 
+

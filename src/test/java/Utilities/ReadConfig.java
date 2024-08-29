@@ -4,8 +4,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.openqa.selenium.interactions.Actions;
+
 public class ReadConfig {
 	
+	Actions action;
 	Properties pro;
 	
 	public ReadConfig()
@@ -40,5 +43,5 @@ public class ReadConfig {
 		   String pwd=pro.getProperty("passward");
 		   return pwd;
 	   }
-
+     
 }

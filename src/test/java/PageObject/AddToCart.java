@@ -1,5 +1,8 @@
 package PageObject;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,11 +18,14 @@ public class AddToCart {
 			PageFactory.initElements( rdriver,this);
 		
 }
-		 @FindBy(name="submit.add-to-cart")
+		    @FindBy(xpath="//div[@class='VariationHandler__showcaseRoot__DgkEa campaign-showcase']//button[@aria-label='Add to Cart']")
 			WebElement txtCart;
-
-       public void clickAddToCart()
+          public void clickAddToCart()
 {
     	   txtCart.click();
 }
+          
+     	 
+     	
+     	 
 }
