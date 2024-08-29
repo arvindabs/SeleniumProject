@@ -2,6 +2,8 @@ package TestCase;
 import org.testng.annotations.Test;
 
 import PageObject.AddToCart;
+import PageObject.BuyNowClass;
+import PageObject.Description;
 import PageObject.LoginPage;
 import PageObject.SearchProduct;
 import PageObject.SelectProduct;
@@ -28,7 +30,12 @@ public class TC_LoginTest001 extends BaseClass {
 		
 		AddToCart ad=new AddToCart(driver);
 		ad.clickAddToCart();
-			
+		
+		Description ds=new Description(driver);
+		ds.DescriptionElement();
+		
+		BuyNowClass by=new BuyNowClass(driver);
+		by.clickAddToCart();
 				
 	}
 
