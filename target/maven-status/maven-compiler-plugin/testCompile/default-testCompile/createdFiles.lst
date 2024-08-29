@@ -4,4 +4,6 @@ Utilities\ReadConfig.class
 PageObject\LoginPage.class
 PageObject\SelectProduct.class
 TestCase\TC_LoginTest001.class
+PageObject\BuyNowClass.class
+PageObject\Description.class
 PageObject\AddToCart.class
